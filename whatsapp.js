@@ -23,6 +23,7 @@ async function sendMessage(driver, number, message) {
 
   await driver.wait(until.elementIsNotPresent(By.id("startup")));
   const selector = By.xpath("//span[@data-icon='send']");
+  await sleep(300);
   try {
     const buttonElement = await driver.findElement(selector);
     await buttonElement.click();
