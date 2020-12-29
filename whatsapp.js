@@ -89,7 +89,7 @@ class Client {
         console.log("Sending message to number:", messageObj.number);
         await sendMessage(this.driver, messageObj.number, messageObj.message);
       }
-      await sleep(1000);
+      await sleep(2000);
     }
   }
 
